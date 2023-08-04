@@ -59,6 +59,7 @@ table {
 .j_right {
 	justify-content: right;
 	bottom: 3%;
+	right: 1%;
 }
 
 .a_center {
@@ -213,7 +214,6 @@ table {
 }
 
 .copyright {
-	padding: ;
 	margin: 0 16px 0 0;
 }
 

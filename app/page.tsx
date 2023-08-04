@@ -6,6 +6,7 @@ import Paragraph from "@/components/Paragraph";
 import Image from "@/components/Image";
 import DropdownList from "@/components/DropdownList";
 import List from "@/components/List"
+import { MdSearch, MdList, MdAccountCircle, MdPlayCircleFilled, MdOutlineFilter, MdOutlineMemory, MdOutlineChecklistRtl, MdOutlineGppGood, MdContactSupport } from 'react-icons/md';
 
 
 export default function Home() {
@@ -41,13 +42,19 @@ export default function Home() {
             />
             <div className='flex w_size_40 space_between a_center'>
               <ButtonIcon 
-                icon=''
+                icon={MdSearch}
+                size={24}
+                color='white'
               />
               <ButtonIcon 
-                icon=''
+                icon={MdList}
+                size={24}
+                color='white'
               />
               <ButtonIcon 
-                icon=''
+                icon={MdAccountCircle}
+                size={24}
+                color='white'
               />
             </div>
           </div>
@@ -574,29 +581,39 @@ export default function Home() {
               </div>                
             </div>
             <div className="flex colum w_size_25">
-              <div className="flex">
+              <div className="flex w_size_100">
               <Title 
                   color='white'
                   FSize='16px'
                   text='Redes sociales'
                 />
               </div>
-              <div className="flex box_logo">
-                <div>
+              <div className="flex box_logo w_size_100 space_between">
+                <div className="flex w_size_100 space_between">
                   <ButtonIcon 
-                  icon=''
+                  icon={MdPlayCircleFilled}
+                  size={24}
+                  color='rgb(153, 153, 153)'
                   />
                   <ButtonIcon 
-                    icon=''
+                    icon={MdOutlineFilter}
+                    size={24}
+                  color='rgb(153, 153, 153)'
                   />
                   <ButtonIcon 
-                    icon=''
+                    icon={MdOutlineMemory}
+                    size={24}
+                  color='rgb(153, 153, 153)'
                   />
                   <ButtonIcon 
-                    icon=''
+                    icon={MdOutlineChecklistRtl}
+                    size={24}
+                  color='rgb(153, 153, 153)'
                   />
                   <ButtonIcon 
-                    icon=''
+                    icon={MdOutlineGppGood}
+                    size={24}
+                    color='rgb(153, 153, 153)'
                   />
                 </div>
               </div>
@@ -676,13 +693,11 @@ export default function Home() {
         </div>
       </footer>
       <section className='flex j_right w_size_100 fixed'>
-          <Button
-             name='?' 
-             color='white'
-             fColor='black' 
-             colorBorder='3px solid white' 
-             radius='25px' 
-          />
+        <ButtonIcon 
+          icon={MdContactSupport}
+          size={32}
+          color='black'
+        />
       </section>
       <section className="flex j_center w_size_100 display_none">
         <div className="flex w_size_100 padding_div">
