@@ -56,6 +56,11 @@ table {
   justify-content: center;
 }
 
+.j_right {
+	justify-content: right;
+	bottom: 3%;
+}
+
 .a_center {
 	align-self: center;
 }
@@ -205,4 +210,22 @@ table {
 
 .language {
 	width: 105px;
+}
+
+.copyright {
+	padding: ;
+	margin: 0 16px 0 0;
+}
+
+.style_link_footer {
+	color: rgb(153, 153, 153);
+}
+
+.final_text {
+	color: white;
+	font-size: 14px;
+}
+
+.display_none {
+	display: none;
 }

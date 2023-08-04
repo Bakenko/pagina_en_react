@@ -1,9 +1,11 @@
 import OptionMenu from "@/components/OptionMenu";
 import Button from "@/components/Button";
+import ButtonIcon from "@/components/ButtonIcon";
 import Title from "@/components/TItle";
 import Paragraph from "@/components/Paragraph";
 import Image from "@/components/Image";
 import DropdownList from "@/components/DropdownList";
+import List from "@/components/List"
 
 
 export default function Home() {
@@ -19,15 +21,17 @@ export default function Home() {
                   alt='icono'
                 />
               </div>
-              <OptionMenu option='Juegos' />
-              <OptionMenu option='Cine' />
-              <OptionMenu option='Industria' />
-              <OptionMenu option='Comunidad' />
-              <OptionMenu option='Recursos' />
-              <OptionMenu option='Learn' />
+              <div className='flex w_size_100 a_center h_size_100'>
+                <OptionMenu option='Juegos' />
+                <OptionMenu option='Cine' />
+                <OptionMenu option='Industria' />
+                <OptionMenu option='Comunidad' />
+                <OptionMenu option='Recursos' />
+                <OptionMenu option='Learn' />
+              </div>
             </div>
           </div>
-          <div className='flex w_size_40 space_between a_center '>
+          <div className='flex w_size_33 space_between a_center'>
             <Button 
               name='PLANES Y PRECIOS' 
               color='white'
@@ -35,20 +39,16 @@ export default function Home() {
               colorBorder='3px solid rgb(33, 150, 243)' 
               radius='25px' 
             />
-            <div>
-              <button>
-                search
-              </button>
-            </div>
-            <div>
-              <button>
-                apps
-              </button>
-            </div>
-            <div>
-              <button>
-                account_circle
-              </button>
+            <div className='flex w_size_40 space_between a_center'>
+              <ButtonIcon 
+                icon=''
+              />
+              <ButtonIcon 
+                icon=''
+              />
+              <ButtonIcon 
+                icon=''
+              />
             </div>
           </div>
         </div>
@@ -583,29 +583,21 @@ export default function Home() {
               </div>
               <div className="flex box_logo">
                 <div>
-                  <button>
-                    smart_display
-                  </button>
-                </div>
-                <div>
-                  <button>
-                    group
-                  </button>
-                </div>
-                <div>
-                  <button>
-                    rocket_launch
-                  </button>
-                </div>
-                <div>
-                  <button>
-                    share
-                  </button>
-                </div>
-                <div>
-                  <button>
-                    public
-                  </button>
+                  <ButtonIcon 
+                  icon=''
+                  />
+                  <ButtonIcon 
+                    icon=''
+                  />
+                  <ButtonIcon 
+                    icon=''
+                  />
+                  <ButtonIcon 
+                    icon=''
+                  />
+                  <ButtonIcon 
+                    icon=''
+                  />
                 </div>
               </div>
             </div>
@@ -627,222 +619,113 @@ export default function Home() {
           <div>
             <hr></hr>
           </div>
-          <div className="flex w_size_100 space_between padding_div">
-            <div>
-              <a href="#">
-                <h3>Comprar</h3>
-              </a>
-              <ul>
-                <a href="#">
-                  <li>Productos</li>
-                </a>
-                <a href="#">
-                  <li>Unity Ads</li>
-                </a>
-                <br></br>
-                <a href="#">
-                  <li>Suscripción</li>
-                </a>
-                <a href="#">
-                  <li>Asset Store</li>
-                </a>
-                <a href="#">
-                  <li>Revendedores</li>
-                </a>
-              </ul>
+          <div className="flex colum w_size_100 space_between padding_div">
+            <div className="flex w_size_100">
+              <List />
             </div>
-            <div>
-              <a href="#">
-                <h3>Educación</h3>
-              </a>          
-              <ul>
-                <a href="#">
-                  <li>Estudiantes</li>
-                </a>
-                <a href="#">
-                  <li>Docentes</li>
-                </a>
-                <a href="#">
-                  <li>Certificación</li>
-                </a>
-                <a href="#">
-                  <li>Averiguar</li>
-                </a>
-                <a href="#">
-                  <li>Centro de excelencia</li>
-                </a>
-              </ul>
+            <div className="flex box_logo w_size_70">
+              <Paragraph
+                color='white'
+                FSize='14px'
+                text='Copyright © 2023 Unity Technologies'
+                margin='0 0 4px'
+              />
             </div>
-            <div>
-              <a href="">
-                <h3>Descargar</h3>
-              </a>
-              <ul>
-                <a href="#">
-                  <li>Obtener Unity</li>
-                </a>
-                <a href="#">
-                  <li>Descargar archivo</li>
-                </a>
-                <a href="#">
-                  <li>Programa beta</li>
-                </a>
-              </ul>
-            </div>
-            <div>
-              <a href="">
-                <h3>Unity Labs</h3>
-              </a>          
-              <ul>
-                <a href="#">
-                  <li>Labs</li>
-                </a>
-                <a href="#">
-                  <li>Publicaciones</li>
-                </a>
-              </ul>
-            </div>
-            <div>
-              <a href="">
-                <h3>Recursos</h3>
-              </a>          
-              <ul>
-                <a href="#">
-                  <li>Plataforma Learn</li>
-                </a>
-                <a href="#">
-                  <li>Comunidad</li>
-                </a>
-                <a href="#">
-                  <li>Documentación</li>
-                </a>
-                <a href="#">
-                  <li>Preguntas y respuestas Unity</li>
-                </a>
-                <a href="#">
-                  <li>Preguntas frecuentes</li>
-                </a>
-                <a href="#">
-                  <li>Estado del servicio</li>
-                </a>
-                <a href="#">
-                  <li>Casos de estudio</li>
-                </a>
-                <a href="#">
-                  <li>Made with Unity</li>
-                </a>
-              </ul>
-            </div>
-            <div>
-              <a href="">
-                <h3>Unity</h3>
-              </a> 
-              <ul>
-                <a href="#">
-                  <li>Nuestra empresa</li>
-                </a>
-                <a href="#">
-                  <li>Marca</li>
-                </a>
-                <a href="#">
-                  <li>Boletín</li>
-                </a>
-                <a href="#">
-                  <li>Blog</li>
-                </a>
-                <a href="#">
-                  <li>Eventos</li>
-                </a>
-                <a href="#">
-                  <li>Carreras</li>
-                </a>
-                <a href="#">
-                  <li>Ayuda</li>
-                </a>
-                <a href="#">
-                  <li>Prensa</li>
-                </a>
-                <a href="#">
-                  <li>Socios</li>
-                </a>
-                <a href="#">
-                  <li>Inversionistas</li>
-                </a>
-                <a href="#">
-                  <li>Afiliados</li>
-                </a>
-                <a href="#">
-                  <li>Seguridad</li>
-                </a>
-                <a href="#">
-                  <li>Impacto social</li>
-                </a>
-                <a href="#">
-                  <li>Inclusion & Diversity</li>
-                </a>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Copyright © 2023 Unity Technologies</p>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Legal</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Cookies</a>
-                </li>
-                <li>
-                  <a href="#">Do Not Sell or Share My Personal Information</a>
-                </li>
-                <li>
-                  <a href="#">Configuración de Cookies</a>
-                </li>
-              </ul>
-            </div>
+            <div className="flex box_logo w_size_70">
+                <div className="copyright">
+                  <Paragraph
+                      color='rgb(153, 153, 153)'
+                      FSize='14px'
+                      text='Legal'
+                  />
+                </div>
+                <div className="copyright">
+                  <Paragraph
+                    color='rgb(153, 153, 153)'
+                    FSize='14px'
+                    text='Privacy Policy'
+                  />
+                </div>
+                <div className="copyright">
+                  <Paragraph
+                    color='rgb(153, 153, 153)'
+                    FSize='14px'
+                    text='Cookies'
+                  />
+                </div>
+                <div className="copyright">
+                  <Paragraph
+                    color='rgb(153, 153, 153)'
+                    FSize='14px'
+                    text='Do Not Sell of Share My Personal Information'
+                  />
+                </div>
+                <div className="copyright">
+                  <Paragraph 
+                    color='rgb(153, 153, 153)'
+                    FSize='14px'
+                    text='Configuarión de Cookies'
+                  />
+                </div>
+              </div>  
             <br></br>
-            <div>
-              <p>Unity, los logotipos de Unity y otras marcas comerciales de Unity son marcas comerciales o marcas comerciales registradas de Unity Technologies o de sus empresas afiliadas en los Estados Unidos y el resto del mundo (<span class="style_link_footer">más información aquí</span>). Los demás nombres o marcas son marcas comerciales de sus respectivos propietarios.</p>
+            <div className="flex box_logo w_size_50 final_text">
+              <p className="final_text">Unity, los logotipos de Unity y otras marcas comerciales de Unity son marcas comerciales o marcas comerciales registradas de Unity Technologies o de sus empresas afiliadas en los Estados Unidos y el resto del mundo (<span className="style_link_footer">más información aquí</span>). Los demás nombres o marcas son marcas comerciales de sus respectivos propietarios.</p>
             </div>
           </div>
         </div>
       </footer>
-      {/*
-      <section>
-        <div>
-          <button>
-            support_agent
-          </button>
+      <section className='flex j_right w_size_100 fixed'>
+          <Button
+             name='?' 
+             color='white'
+             fColor='black' 
+             colorBorder='3px solid white' 
+             radius='25px' 
+          />
+      </section>
+      <section className="flex j_center w_size_100 display_none">
+        <div className="flex w_size_100 padding_div">
+          <div className="flex w_size_50">
+            <div className="flex w_size_100">
+              <Paragraph 
+                color='black'
+                FSize='16px'
+                text='Al hacer clic en “Aceptar todas las cookies”, usted acepta que las cookies se guarden en su dispositivo para mejorar la navegación del sitio, analizar el uso del mismo, y colaborar con nuestros estudios para marketing.'
+                margin='0 32px'
+              />
+            </div>
+          </div>
+          <div className="flex w_size_50">
+            <div className="flex w_size_100 j_center a_center">
+              <div className="flex w_size_50 a_center j_center">
+                <Paragraph 
+                  color='black'
+                  FSize='16px'
+                  text='Configuración de cookies'
+                  margin='0'
+                />
+              </div>
+              <div className="flex w_size_50 space_between">
+                <Button 
+                  fColor='transparent'
+                  color='black'
+                  colorBorder='3px solid black'
+                  radius='25px'
+                  name='Aceptar todas las cookies'
+                />
+                <Button 
+                  fColor='transparent'
+                  color='black'
+                  colorBorder='none'
+                  radius='25px'
+                  name='X'
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <div>
-              <p>Al hacer clic en “Aceptar todas las cookies”, usted acepta que las cookies se guarden en su dispositivo para mejorar la navegación del sitio, analizar el uso del mismo, y colaborar con nuestros estudios para marketing.</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <p>Configuración de cookies</p>
-              </div>
-              <div>
-                <button>Aceptar todas las cookies</button>
-              </div>
-              <div>
-                <button>Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </main>
   )
 }

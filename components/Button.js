@@ -10,7 +10,7 @@ const Button = ({color, fColor, colorBorder, radius, name}) => {
     borderRadius: radius,
     cursor: 'pointer',
     fontSize: '16px',
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
   };
 return <button style={buttonStyle}>{name}</button>
 };
