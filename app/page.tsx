@@ -693,11 +693,13 @@ export default function Home() {
         </div>
       </footer>
       <section className='flex j_right w_size_100 fixed'>
-        <ButtonIcon 
-          icon={MdContactSupport}
-          size={32}
-          color='black'
-        />
+        <div className="flex j_right fixed box_icon">
+          <ButtonIcon 
+            icon={MdContactSupport}
+            size={40}
+            color='white'
+          />
+        </div>
       </section>
       <section className="flex j_center w_size_100 display_none">
         <div className="flex w_size_100 padding_div">
