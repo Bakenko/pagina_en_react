@@ -1,5 +1,5 @@
 import OptionMenu from "@/components/OptionMenu";
-import Button from "@/components/Button";
+import Button from "@/components/Button/Button";
 import ButtonIcon from "@/components/ButtonIcon";
 import Title from "@/components/TItle";
 import Paragraph from "@/components/Paragraph";
